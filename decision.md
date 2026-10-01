@@ -109,3 +109,11 @@
 **Tradeoff:** The project now has a lightweight build-backend dependency during environment setup. This is more explicit and reproducible than requiring every runtime command to remember `--app-dir src`.
 
 **Verification:** On 2026-09-30, `uv sync --all-groups` built and installed `points-guide-rag` in editable mode. `uv run python -c "import points_guide_rag"` resolved to `src/points_guide_rag/__init__.py`; all 7 tests and Ruff then passed.
+
+## 2026-09-30 — Daily GitHub learning history
+
+**Decision:** Push one meaningful commit to the GitHub `main` branch at the end of each working session, including code, tests, and relevant plan/decision/flow/reading updates.
+
+**Why:** A readable history makes the project’s technical progression visible, creates recovery points, and provides a portfolio-quality record of engineering decisions.
+
+**Tradeoff:** Commits need a concise, accurate message and a quick review of staged files. Do not create empty commits for a visual streak, and never stage `.env`, credentials, virtual environments, or source artifacts that should remain local.

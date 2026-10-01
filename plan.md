@@ -13,6 +13,7 @@
 - Google ADK orchestrates model interaction, tool calls, and session context; deterministic Python services own ingestion, hybrid retrieval, citation validation, and recommendation scoring.
 - Do not add agent behavior merely because ADK is present. Each tool call and workflow branch needs an evaluation-backed purpose.
 - Update each milestone below with `Status`, `Started`, `Completed`, and `Evidence` (test command, evaluation run, or deployment link) as work progresses.
+- At the end of each working session with meaningful changes, commit the code, tests, and associated learning artifacts to the `main` branch. Do not create empty commits merely to maintain a streak.
 
 ---
 
