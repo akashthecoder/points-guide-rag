@@ -5,3 +5,10 @@ __pycache__/
 .ruff_cache/
 coverage.xml
 htmlcov/
+
+# Private learning notes and local agent instructions
+AGENTS.md
+plan.md
+decision.md
+flow.md
+reading.md
