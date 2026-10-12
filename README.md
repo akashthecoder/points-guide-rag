@@ -34,8 +34,8 @@ After enabling Vertex AI, configuring ADC, and reading the local-authentication 
 ```bash
 export GOOGLE_GENAI_USE_VERTEXAI=true
 export GOOGLE_CLOUD_PROJECT=rag-project-511419
-export GOOGLE_CLOUD_LOCATION=us-central1
+export GOOGLE_CLOUD_LOCATION=global
 uv run python -m points_guide_rag.agents.run_tool_lab
 ```
 
-This makes a billable Vertex AI request using your local ADC identity. It uses an in-memory ADK session, asks the model to count words, and prints the event trace. It does not persist session data or answer points/travel questions.
+This makes a billable Vertex AI request using your local ADC identity. It uses an in-memory ADK session, asks the model to count words, and prints the event trace. It does not persist session data or answer points/travel questions. The `global` endpoint is used for this non-sensitive learning lab because the chosen model is not available from `us-central1`; production location and data-residency requirements will be chosen deliberately later.
